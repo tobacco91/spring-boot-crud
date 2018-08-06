@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password:
+
+mybatis:
+  mapper-locations: classpath:mapper/Mysql_*Mapper.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
